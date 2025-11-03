@@ -67,19 +67,15 @@ function draw() {
   //draw() vuota, poiché disegno statico
 }
 
-/**
- //param determina posizione, dimensione, rotazione glifo
- * @param {number} posX //posizione X angolo superiore sinistro contenitore glifo, posizione orizzontale glifo
- * @param {number} posY //posizione Y angolo superiore sinistro contenitore glifo, posizione verticale glifo
- * @param {number} containerSide //lato contenitore glifo (side), dimensione massima glifo, per calcolare diametro cerchio e dimensioni rettangolo
- * @param {number} col0Val //valore column0 per colore cerchio
- * @param {number} col1Val //valore column1 per colore rettangolo
- * @param {number} col2Val //valore column2 per angolo di rotazione rettangolo
- */
 function drawGlyph(posX, posY, containerSide, col0Val, col1Val, col2Val) { //argomenti sono parametri per disegnare glifo
+                                                                           //lato contenitore glifo (side), dimensione massima glifo, per calcolare diametro cerchio e dimensioni rettangolo
+                                                                           //valore column0 per colore cerchio
+                                                                           //valore column1 per colore rettangolo
+                                                                           //valore column2 per angolo di rotazione rettangolo
 
   let centerX = posX + containerSide / 2; //calcolo centro contenitore glifo, che è centro del cerchio
-  let centerY = posY + containerSide / 2;
+                                          //posizione X angolo superiore sinistro contenitore glifo, posizione orizzontale glifo
+  let centerY = posY + containerSide / 2; //posizione Y angolo superiore sinistro contenitore glifo, posizione verticale glifo
 
   let circleDiameter = containerSide / 2;
   let circleRadius = circleDiameter / 2;
